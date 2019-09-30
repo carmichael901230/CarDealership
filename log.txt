@@ -264,3 +264,26 @@
 2019-09-30 15:26:35 INFO  root:26 - Login: login as employee [cardealer]
 2019-09-30 15:27:04 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=3, brand=Ford, model=Focus, price=30000.0, color=blue, owner=null, pendingList=[]]]
 2019-09-30 15:27:04 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=3, brand=Ford, model=Focus, price=30000.0, color=blue, owner=null, pendingList=[]]]
+2019-09-30 16:09:00 INFO  root:26 - Login: login as customer [customer]
+2019-09-30 16:09:11 INFO  root:26 - Make Offer(customer): successfully updated carPool HashMap [CarImpl [id=1, brand=Ford, model=F350, price=60000.0, color=red, owner=null, pendingList=[UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, color=gray, owner=null, pendingList=[]]]]]]]
+2019-09-30 16:09:11 INFO  root:26 - Make Offer(customer): successfully write updated carPool to CarPool.dat
+2019-09-30 16:09:17 INFO  root:26 - Make Offer(customer): successfully updated carPool HashMap [CarImpl [id=2, brand=Tesla, model=Model X, price=70000.0, color=silvver, owner=null, pendingList=[UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, color=gray, owner=null, pendingList=[]]]]]]]
+2019-09-30 16:09:17 INFO  root:26 - Make Offer(customer): successfully write updated carPool to CarPool.dat
+2019-09-30 16:09:23 ERROR root:14 - Login: fail to login due to password doesn't match
+2019-09-30 16:09:36 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=cust, password=cust, fullName=cust cust, userType=0, carList=[]]
+2019-09-30 16:09:36 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=cust, password=cust, fullName=cust cust, userType=0, carList=[]]
+2019-09-30 16:09:40 INFO  root:26 - Make Offer(customer): successfully updated carPool HashMap [CarImpl [id=1, brand=Ford, model=F350, price=60000.0, color=red, owner=null, pendingList=[UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, color=gray, owner=null, pendingList=[]]]], UserImpl, userId=cust, password=cust, fullName=cust cust, userType=0, carList=[]]]]]
+2019-09-30 16:09:40 INFO  root:26 - Make Offer(customer): successfully write updated carPool to CarPool.dat
+2019-09-30 16:17:30 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 16:17:52 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 16:18:06 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=4, brand=Honda, model=Accord, price=40000.0, color=white, owner=null, pendingList=[]]]
+2019-09-30 16:18:06 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=4, brand=Honda, model=Accord, price=40000.0, color=white, owner=null, pendingList=[]]]
+2019-09-30 16:23:41 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 16:23:58 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=5, brand=Toyota, model=Purse, price=35000.0, color=blue, owner=null, pendingList=[]]]
+2019-09-30 16:23:58 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=5, brand=Toyota, model=Purse, price=35000.0, color=blue, owner=null, pendingList=[]]]
+2019-09-30 16:26:18 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 16:26:46 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=6, brand=Ford, model=focus, price=35000.0, color=red, owner=null, pendingList=[]]]
+2019-09-30 16:26:46 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=6, brand=Ford, model=focus, price=35000.0, color=red, owner=null, pendingList=[]]]
+2019-09-30 16:39:55 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 16:40:14 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=7, brand=nissan, model=Maxima, price=45000.0, color=white, owner=null, pendingList=[]]]
+2019-09-30 16:40:14 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=7, brand=nissan, model=Maxima, price=45000.0, color=white, owner=null, pendingList=[]]]

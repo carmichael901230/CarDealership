@@ -229,7 +229,7 @@ public class Services {
 			System.out.print("Enter Color: ");
 			color = cin.nextLine();
 			System.out.print("Enter Price: ");
-			price = cin.nextDouble();
+			price = Double.parseDouble(cin.nextLine());
 				
 			// read CarPool.dat find the nextId
 			try {
@@ -338,7 +338,7 @@ public class Services {
 	public boolean makeOffer(ArrayList<CarImpl> carLot, UserImpl user, Scanner cin) {
 		// prompt customer to choose a car
 		System.out.print("Enter # of Car to Make an Offer: ");
-		int choice = cin.nextInt();
+		int choice = Integer.parseInt(cin.nextLine());
 		
 		// retrieve selected car from ArrayList, and update its pendingList
 		CarImpl carChosen = carLot.get(choice-1);
@@ -416,14 +416,14 @@ public class Services {
 		
 		// prompt employee to select a car 
 		System.out.print("Enter # of Car: ");
-		int carSelect = cin.nextInt();
+		int carSelect = Integer.parseInt(cin.nextLine());
 		selectedCar = carLot.get(carSelect-1);
 		// display pending customer name 
 		pendingList = selectedCar.getPendingList();
 		this.displayPendingList(pendingList);
 		// prompt employee to enter customer number to reject offer
 		System.out.println("Enter # of User to Reject the Offer: ");
-		int userSelect = cin.nextInt();
+		int userSelect = Integer.parseInt(cin.nextLine());
 		pendingList.remove(userSelect-1);
 		// open CarPool.dat read HashMap carPool
 		try {
@@ -482,7 +482,9 @@ public class Services {
 		carLot = this.getCarLot();
 		// prompt employee to enter # of car to remove
 		System.out.println("Enter # of Car");
-		int carSelected = cin.nextInt();
+		int carSelected = 0;
+		if (cin.hasNext())
+			carSelected = Integer.parseInt(cin.nextLine());
 		CarImpl removedCar = carLot.get(carSelected-1);
 		info("Remove Car(employee): successfully selected car ["+removedCar.toString()+"]");
 		
@@ -509,7 +511,7 @@ public class Services {
 		
 		// prompt employee to choose which car to make offer
 		System.out.println("Enter # Car: ");
-		c = cin.nextInt();
+		c = Integer.parseInt(cin.nextLine());
 		carLot = this.getCarLot();
 		CarImpl carSelect = carLot.get(c-1);
 		// get and display pendingList of the car
@@ -517,7 +519,7 @@ public class Services {
 		this.displayPendingList(pendingList);
 		// prompt employee to choose which customer got the offer
 		System.out.println("Enter # of Offer to Accpet: ");
-		c = cin.nextInt();
+		c = Integer.parseInt(cin.nextLine());
 		UserImpl offerUser = pendingList.get(c-1);
 		// add offered car to user.carList
 		BoughtCar boughtCar = new BoughtCar(carSelect.getId(), carSelect.getBrand(), carSelect.getModel(), carSelect.getColor(), carSelect.getPrice(), 0.0);
@@ -729,7 +731,7 @@ public class Services {
 					System.out.println("Invalid input, Choose again...");
 				}
 				System.out.println("Enter # Choice: ");
-				c = in.nextInt();
+				c = Integer.parseInt(in.nextLine());
 			}
 			// choose to login
 			if (c == 1) {
@@ -752,7 +754,7 @@ public class Services {
 							System.out.println("Invalid input, Choose again...");
 						}
 						System.out.println("Enter # Choice: ");
-						c = in.nextInt();
+						c = Integer.parseInt(in.nextLine());
 						// view car on lot
 						if (c == 1) {
 							this.getCarLot();
@@ -791,9 +793,10 @@ public class Services {
 							System.out.println("Invalid input, Choose again...");
 						}
 						System.out.println("Enter # Choice: ");
-						c = in.nextInt();
+						c = Integer.parseInt(in.nextLine());
 						// add car to lot
 						if (c == 1) {
+							validEnter = 1;
 							Services.lineSplitter();
 							Services.displayTitle();
 							if (addCar(fin)) {
@@ -805,6 +808,7 @@ public class Services {
 						}
 						// remove a car from lot
 						else if (c == 2) {
+							validEnter = 1;
 							Services.lineSplitter();
 							Services.displayTitle();
 							if (this.removeCar(fin) != null) {
@@ -816,6 +820,7 @@ public class Services {
 						}
 						// accept an offer
 						else if (c == 3) {
+							validEnter = 1;
 							Services.lineSplitter();
 							Services.displayTitle();
 							ArrayList<CarImpl> carLot = this.getCarLot();
@@ -824,6 +829,7 @@ public class Services {
 						}
 						// reject offer
 						else if (c == 4) {
+							validEnter = 1;
 							Services.lineSplitter();
 							Services.displayTitle();
 							ArrayList<CarImpl> carLot = this.getCarLot();
@@ -836,6 +842,7 @@ public class Services {
 						}
 						// log out
 						else if (c == 0) {
+							validEnter = 1;
 							this.curUser = null;
 							this.loggedIn = 0;
 							continue loginLabel;
