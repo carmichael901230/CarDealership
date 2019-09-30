@@ -1,0 +1,266 @@
+2019-09-28 15:07:27 INFO  root:26 - successfully created user: UserImpl [id=9, userId=carmchael, password=wang87067835, fullName=zhaochun wang, userType=0, carList=[]]
+2019-09-28 15:07:27 INFO  root:26 - successfully write newUser to file: UserImpl [id=9, userId=carmchael, password=wang87067835, fullName=zhaochun wang, userType=0, carList=[]]
+2019-09-28 15:07:59 ERROR root:14 - fail to read existing userPool before adding newUser
+2019-09-28 17:19:09 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=carmichael901230, password=wang87067835, fullName=zhaochun wang, userType=0, carList=[]]
+2019-09-28 17:19:09 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=carmichael901230, password=wang87067835, fullName=zhaochun wang, userType=0, carList=[]]
+2019-09-28 17:34:35 ERROR root:14 - Login: fail to login due to unmatched userId or password
+2019-09-28 17:34:57 ERROR root:14 - Login: fail to login due to unmatched userId or password
+2019-09-28 17:35:26 ERROR root:14 - Login: fail to login due to unmatched userId or password
+2019-09-28 17:36:36 ERROR root:14 - Login: fail to login due to unmatched userId or password
+2019-09-28 17:38:44 INFO  root:26 - Login: login as employeecarmichael
+2019-09-28 17:39:27 INFO  root:26 - Login: login as employee [carmichael]
+2019-09-28 17:39:35 INFO  root:26 - Login: login as customer [carmichael901230]
+2019-09-28 17:40:08 ERROR root:14 - CreateUser: fail to read user input from console
+2019-09-28 17:40:08 ERROR root:14 - CreateUser: fail to create user
+2019-09-28 17:40:08 ERROR root:14 - Login: fail to get user input from console
+2019-09-28 18:52:19 INFO  root:26 - Add Car: Successfully created newCar object
+2019-09-28 18:53:59 INFO  root:26 - Add Car: Successfully created newCar object [{0=CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, offerList=[]], 1=CarImpl [id=1, brand=Honda, model=CR-V, price=23000.0, offerList=[]]}]
+2019-09-28 18:54:45 INFO  root:26 - Add Car: Successfully created newCar object [CarImpl [id=1, brand=Honda , model=CR-V, price=23000.0, offerList=[]]]
+2019-09-28 18:55:32 INFO  root:26 - Add Car: Successfully created newCar object [CarImpl [id=1, brand=Honda, model=CR-V, price=23000.0, offerList=[]]]
+2019-09-28 18:56:29 ERROR root:14 - Add Car: fail to get user input of car info
+2019-09-28 18:57:03 INFO  root:26 - Add Car: Successfully created newCar object [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, offerList=[]]]
+2019-09-28 18:57:39 INFO  root:26 - Add Car: Successfully created newCar object [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, offerList=[]]]
+2019-09-28 18:57:39 INFO  root:26 - Add Car: Succussfully added newCar to CarPool [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, offerList=[]]]
+2019-09-28 18:58:56 INFO  root:26 - Add Car: Successfully created newCar object [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, offerList=[]]]
+2019-09-28 18:58:56 INFO  root:26 - Add Car: Succussfully added newCar to CarPool [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, offerList=[]]]
+2019-09-28 19:33:02 ERROR root:14 - View Carlot: fail to read CarPool.dat due to file doesn't exist
+2019-09-28 19:36:25 INFO  root:26 - Add Car: Successfully created newCar object [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, color=white, owner=null, pendingList=[]]]
+2019-09-28 19:36:25 INFO  root:26 - Add Car: Succussfully added newCar to CarPool [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, color=white, owner=null, pendingList=[]]]
+2019-09-28 19:46:05 ERROR root:14 - View Carlot: fail to read CarPool.dat dut to IO Error
+2019-09-28 19:47:22 INFO  root:26 - Add Car: Successfully created newCar object [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, color=white, owner=null, pendingList=[]]]
+2019-09-28 19:47:22 INFO  root:26 - Add Car: Succussfully added newCar to CarPool [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, color=white, owner=null, pendingList=[]]]
+2019-09-28 19:50:17 ERROR root:14 - Add Car: fail to get user input of car info
+2019-09-28 19:50:31 INFO  root:26 - Add Car: Successfully created newCar object [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, color=white, owner=null, pendingList=[]]]
+2019-09-28 19:50:31 INFO  root:26 - Add Car: Succussfully write newCar to CarPool [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, color=white, owner=null, pendingList=[]]]
+2019-09-28 19:52:42 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, color=white, owner=null, pendingList=[]]]
+2019-09-28 19:52:42 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, color=white, owner=null, pendingList=[]]]
+2019-09-28 19:53:08 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, color=white, owner=null, pendingList=[]]]
+2019-09-28 19:53:08 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, color=white, owner=null, pendingList=[]]]
+2019-09-28 20:06:52 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=2, brand=Infinity, model=Q50, price=30000.0, color=black, owner=null, pendingList=[]]]
+2019-09-28 20:06:52 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=2, brand=Infinity, model=Q50, price=30000.0, color=black, owner=null, pendingList=[]]]
+2019-09-29 14:06:04 ERROR root:14 - Login: fail to login due to error when reading UserPool.dat
+2019-09-29 14:06:35 ERROR root:14 - Login: fail to login due to error when reading UserPool.dat
+2019-09-29 14:09:47 ERROR root:14 - Login: fail to login due to error when reading UserPool.dat
+2019-09-29 14:10:14 ERROR root:14 - Login: fail to login due to error when reading UserPool.dat
+2019-09-29 14:11:54 ERROR root:14 - Login: fail to login due to error when reading UserPool.dat
+2019-09-29 14:13:08 ERROR root:14 - Login: fail to login due to error when reading UserPool.dat
+2019-09-29 14:15:06 ERROR root:14 - Login: fail to login due to error when reading UserPool.dat
+2019-09-29 14:15:28 ERROR root:14 - Login: fail to login due to error when reading UserPool.dat
+2019-09-29 14:15:45 ERROR root:14 - Login: fail to login due to error when reading UserPool.dat
+2019-09-29 14:16:12 ERROR root:14 - Login: fail to login due to error when reading UserPool.dat
+2019-09-29 14:23:41 INFO  root:26 - Login: login as employee [carmichael]
+2019-09-29 14:24:02 INFO  root:26 - Login: login as customer [carmichael901230]
+2019-09-29 14:25:47 INFO  root:26 - Login: login as employee [carmichael]
+2019-09-29 14:27:12 INFO  root:26 - Login: login as employee [carmichael]
+2019-09-29 14:27:37 INFO  root:26 - Login: login as employee [carmichael]
+2019-09-29 14:31:13 INFO  root:26 - Login: login as employee [carmichael]
+2019-09-29 14:31:22 INFO  root:26 - Make Offer(customer): successfully updated carPool HashMap
+2019-09-29 14:31:22 INFO  root:26 - Make Offer(customer: successfully write updated carPool to CarPool.dat
+2019-09-29 14:34:44 INFO  root:26 - Login: login as employee [carmichael]
+2019-09-29 14:36:31 INFO  root:26 - Login: login as employee [carmichael]
+2019-09-29 14:36:55 ERROR root:14 - Login: fail to login due to userId no found
+2019-09-29 14:37:02 INFO  root:26 - Login: login as employee [carmichael]
+2019-09-29 15:16:16 INFO  root:26 - Login: login as customer [carmichael901230]
+2019-09-29 15:21:18 INFO  root:26 - Login: login as employee [carmichael]
+2019-09-29 16:25:04 INFO  root:26 - Login: login as customer [carmichael901230]
+2019-09-29 16:25:10 INFO  root:26 - Reject Offer: successfully updated pendinglist of car [CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, color=gray, owner=null, pendingList=[]]]
+2019-09-29 16:25:10 INFO  root:26 - Reject Offer(employee): successfully write updated carPool to CarPool.dat
+2019-09-29 16:25:25 INFO  root:26 - Login: login as customer [carmichael901230]
+2019-09-29 18:34:08 ERROR root:14 - Login: fail to login due to userId no found
+2019-09-29 18:35:55 ERROR root:14 - Login: fail to login due to userId no found
+2019-09-29 18:36:07 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 20:51:03 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 21:11:36 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:11:36 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:14:16 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:14:16 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:15:24 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:15:24 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:18:50 ERROR root:14 - CreateUser: fail to read user input from console
+2019-09-29 21:19:09 ERROR root:14 - CreateUser: fail to read user input from console
+2019-09-29 21:20:08 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=customer, password=customer, fullName=customer, userType=0, carList=[]]
+2019-09-29 21:20:08 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=customer, password=customer, fullName=customer, userType=0, carList=[]]
+2019-09-29 21:20:48 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:20:48 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:21:18 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=customer , password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:21:18 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=customer , password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:21:47 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=, password=customer, fullName=customer, userType=0, carList=[]]
+2019-09-29 21:21:47 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=, password=customer, fullName=customer, userType=0, carList=[]]
+2019-09-29 21:22:13 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:22:13 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:23:13 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=custoer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:23:13 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=custoer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:25:47 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:25:47 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:26:18 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:26:18 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]
+2019-09-29 21:26:26 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=c, password=c, fullName=c, userType=0, carList=[]]
+2019-09-29 21:26:26 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=c, password=c, fullName=c, userType=0, carList=[]]
+2019-09-29 21:30:58 INFO  root:26 - Login: login as customer [customer]
+2019-09-29 21:35:38 INFO  root:26 - Login: login as customer [customer]
+2019-09-29 21:35:54 INFO  root:26 - Make Offer(customer): successfully updated carPool HashMap [CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, color=gray, owner=null, pendingList=[UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]]]]
+2019-09-29 21:35:54 INFO  root:26 - Make Offer(customer): successfully write updated carPool to CarPool.dat
+2019-09-29 21:36:36 INFO  root:26 - Login: login as customer [customer]
+2019-09-29 21:37:18 INFO  root:26 - Login: login as customer [customer]
+2019-09-29 21:39:41 ERROR root:14 - Login: fail to login due to password doesn't match
+2019-09-29 21:39:46 INFO  root:26 - Login: login as customer [customer]
+2019-09-29 21:39:55 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 21:39:55 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 21:40:47 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 21:40:47 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 21:42:36 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 21:42:36 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 21:46:36 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 21:46:36 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 21:51:04 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 21:51:04 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 21:51:37 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 21:51:37 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 21:51:37 ERROR root:14 - Login: fail to get user input from console
+2019-09-29 21:51:59 INFO  root:26 - Login: login as customer [c]
+2019-09-29 21:52:10 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 22:00:19 ERROR root:14 - Login: fail to login due to userId no found
+2019-09-29 22:00:27 ERROR root:14 - Login: fail to login due to userId no found
+2019-09-29 22:00:33 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 22:01:22 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 22:01:28 INFO  root:26 - Reject Offer: successfully updated pendinglist of car [CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, color=gray, owner=null, pendingList=[]]]
+2019-09-29 22:01:28 INFO  root:26 - Reject Offer(employee): successfully write updated carPool to CarPool.dat
+2019-09-29 22:08:41 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:08:41 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:08:41 ERROR root:14 - Login: fail to get user input from console
+2019-09-29 22:11:01 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:11:01 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:13:46 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:13:46 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:14:13 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:14:13 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:15:09 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:15:09 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:17:36 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:17:36 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:20:08 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:20:08 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:24:54 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 22:25:43 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=3, brand=Ford, model=F350, price=40000.0, color=red, owner=null, pendingList=[]]]
+2019-09-29 22:25:43 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=3, brand=Ford, model=F350, price=40000.0, color=red, owner=null, pendingList=[]]]
+2019-09-29 22:25:54 INFO  root:26 - Login: login as customer []
+2019-09-29 22:26:51 INFO  root:26 - Login: login as customer [c]
+2019-09-29 22:26:57 INFO  root:26 - Make Offer(customer): successfully updated carPool HashMap [CarImpl [id=3, brand=Ford, model=F350, price=40000.0, color=red, owner=null, pendingList=[UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]]]]
+2019-09-29 22:26:57 INFO  root:26 - Make Offer(customer): successfully write updated carPool to CarPool.dat
+2019-09-29 22:27:02 INFO  root:26 - Login: login as customer [c]
+2019-09-29 22:27:09 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:27:09 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=c, password=c, fullName=c c, userType=0, carList=[]]
+2019-09-29 22:27:19 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 22:28:12 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=4, brand=Tesla, model=Model x, price=70000.0, color=silver, owner=null, pendingList=[]]]
+2019-09-29 22:28:12 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=4, brand=Tesla, model=Model x, price=70000.0, color=silver, owner=null, pendingList=[]]]
+2019-09-29 22:29:50 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 22:33:13 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 22:34:04 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=5, brand=Chevrolet, model=Impala, price=50000.0, color=black, owner=null, pendingList=[]]]
+2019-09-29 22:34:04 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=5, brand=Chevrolet, model=Impala, price=50000.0, color=black, owner=null, pendingList=[]]]
+2019-09-29 23:22:24 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 23:22:59 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 23:24:52 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 23:25:50 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 23:27:17 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 23:27:21 INFO  root:26 - Remove Car(employee): successfully selected car [CarImpl [id=5, brand=Chevrolet, model=Impala, price=50000.0, color=black, owner=null, pendingList=[]]]
+2019-09-29 23:27:21 INFO  root:26 - Remove Car(employee): successfully removed car from lot [CarImpl [id=5, brand=Chevrolet, model=Impala, price=50000.0, color=black, owner=null, pendingList=[]]]
+2019-09-29 23:27:48 INFO  root:26 - CreateUser: successfully created user: UserImpl, userId=newCust, password=newCust, fullName=New Cust, userType=0, carList=[]]
+2019-09-29 23:27:48 INFO  root:26 - CreateUser: successfully write newUser to file: UserImpl, userId=newCust, password=newCust, fullName=New Cust, userType=0, carList=[]]
+2019-09-29 23:28:04 INFO  root:26 - Make Offer(customer): successfully updated carPool HashMap [CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, color=gray, owner=null, pendingList=[UserImpl, userId=newCust, password=newCust, fullName=New Cust, userType=0, carList=[]]]]]
+2019-09-29 23:28:04 INFO  root:26 - Make Offer(customer): successfully write updated carPool to CarPool.dat
+2019-09-29 23:28:22 ERROR root:14 - Login: fail to login due to userId no found
+2019-09-29 23:28:38 ERROR root:14 - Login: fail to login due to userId no found
+2019-09-29 23:28:44 ERROR root:14 - Login: fail to login due to userId no found
+2019-09-29 23:29:02 INFO  root:26 - Login: login as customer [newCust]
+2019-09-29 23:29:22 INFO  root:26 - Login: login as customer [newCust]
+2019-09-29 23:29:34 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 23:29:56 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 23:30:10 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=5, brand=Tesla, model=Model X, price=70000.0, color=silver, owner=null, pendingList=[]]]
+2019-09-29 23:30:10 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=5, brand=Tesla, model=Model X, price=70000.0, color=silver, owner=null, pendingList=[]]]
+2019-09-29 23:30:21 INFO  root:26 - Remove Car(employee): successfully selected car [CarImpl [id=5, brand=Tesla, model=Model X, price=70000.0, color=silver, owner=null, pendingList=[]]]
+2019-09-29 23:30:21 INFO  root:26 - Remove Car(employee): successfully removed car from lot [CarImpl [id=5, brand=Tesla, model=Model X, price=70000.0, color=silver, owner=null, pendingList=[]]]
+2019-09-29 23:30:26 INFO  root:26 - Reject Offer: successfully updated pendinglist of car [CarImpl [id=3, brand=Ford, model=F350, price=40000.0, color=red, owner=null, pendingList=[]]]
+2019-09-29 23:30:26 INFO  root:26 - Reject Offer(employee): successfully write updated carPool to CarPool.dat
+2019-09-29 23:30:48 INFO  root:26 - Login: login as customer [customer]
+2019-09-29 23:30:53 INFO  root:26 - Make Offer(customer): successfully updated carPool HashMap [CarImpl [id=4, brand=Tesla, model=Model x, price=70000.0, color=silver, owner=null, pendingList=[UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]]]]
+2019-09-29 23:30:53 INFO  root:26 - Make Offer(customer): successfully write updated carPool to CarPool.dat
+2019-09-29 23:30:55 INFO  root:26 - Make Offer(customer): successfully updated carPool HashMap [CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, color=gray, owner=null, pendingList=[UserImpl, userId=newCust, password=newCust, fullName=New Cust, userType=0, carList=[]], UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]]]]
+2019-09-29 23:30:55 INFO  root:26 - Make Offer(customer): successfully write updated carPool to CarPool.dat
+2019-09-29 23:31:04 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-29 23:31:17 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 12:51:48 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 12:52:24 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 12:52:51 ERROR root:14 - Login: fail to login due to password doesn't match
+2019-09-30 12:52:56 INFO  root:26 - Login: login as customer [c]
+2019-09-30 12:54:53 INFO  root:26 - Login: login as customer [newCust]
+2019-09-30 12:55:02 INFO  root:26 - Make Offer(customer): successfully updated carPool HashMap [CarImpl [id=3, brand=Ford, model=F350, price=40000.0, color=red, owner=null, pendingList=[UserImpl, userId=newCust, password=newCust, fullName=New Cust, userType=0, carList=[]]]]]
+2019-09-30 12:55:02 INFO  root:26 - Make Offer(customer): successfully write updated carPool to CarPool.dat
+2019-09-30 12:55:12 INFO  root:26 - Login: login as customer [newCust]
+2019-09-30 12:55:24 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 12:55:29 INFO  root:26 - Reject Offer: successfully updated pendinglist of car [CarImpl [id=3, brand=Ford, model=F350, price=40000.0, color=red, owner=null, pendingList=[]]]
+2019-09-30 12:55:29 INFO  root:26 - Reject Offer(employee): successfully write updated carPool to CarPool.dat
+2019-09-30 12:57:30 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 13:04:57 INFO  root:26 - Login: login as customer [customer]
+2019-09-30 13:05:02 INFO  root:26 - Make Offer(customer): successfully updated carPool HashMap [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, color=white, owner=null, pendingList=[UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]]]]
+2019-09-30 13:05:02 INFO  root:26 - Make Offer(customer): successfully write updated carPool to CarPool.dat
+2019-09-30 13:05:17 ERROR root:14 - Login: fail to login due to userId no found
+2019-09-30 13:05:23 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 13:05:33 INFO  root:26 - Reject Offer: successfully updated pendinglist of car [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, color=white, owner=null, pendingList=[]]]
+2019-09-30 13:05:33 INFO  root:26 - Reject Offer(employee): successfully write updated carPool to CarPool.dat
+2019-09-30 13:07:00 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 13:13:22 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 13:13:33 INFO  root:26 - Reject Offer: successfully updated pendinglist of car [CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, color=gray, owner=null, pendingList=[UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]]]]
+2019-09-30 13:13:33 INFO  root:26 - Reject Offer(employee): successfully write updated carPool to CarPool.dat
+2019-09-30 13:22:48 INFO  root:26 - Login: login as customer [newCust]
+2019-09-30 13:22:51 INFO  root:26 - Make Offer(customer): successfully updated carPool HashMap [CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, color=gray, owner=null, pendingList=[UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]], UserImpl, userId=newCust, password=newCust, fullName=New Cust, userType=0, carList=[]]]]]
+2019-09-30 13:22:51 INFO  root:26 - Make Offer(customer): successfully write updated carPool to CarPool.dat
+2019-09-30 13:22:55 INFO  root:26 - Make Offer(customer): successfully updated carPool HashMap [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, color=white, owner=null, pendingList=[UserImpl, userId=newCust, password=newCust, fullName=New Cust, userType=0, carList=[]]]]]
+2019-09-30 13:22:55 INFO  root:26 - Make Offer(customer): successfully write updated carPool to CarPool.dat
+2019-09-30 13:23:01 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 13:23:07 INFO  root:26 - Reject Offer: successfully updated pendinglist of car [CarImpl [id=1, brand=Honda, model=CR-v, price=23000.0, color=white, owner=null, pendingList=[]]]
+2019-09-30 13:23:07 INFO  root:26 - Reject Offer(employee): successfully write updated carPool to CarPool.dat
+2019-09-30 13:34:10 INFO  root:26 - Login: login as customer [customer]
+2019-09-30 13:34:21 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 13:34:36 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 13:34:56 INFO  root:26 - Login: login as customer [customer]
+2019-09-30 14:57:53 INFO  root:26 - Login: login as customer [customer]
+2019-09-30 14:58:08 INFO  root:26 - Login: login as customer [customer]
+2019-09-30 14:58:10 ERROR root:14 - View Carlot: fail to read CarPool.dat dut to IO Error
+2019-09-30 14:58:33 ERROR root:14 - Login: fail to login due to password doesn't match
+2019-09-30 14:58:42 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 14:58:46 ERROR root:14 - View Carlot: fail to read CarPool.dat dut to IO Error
+2019-09-30 15:01:58 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 15:02:11 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=1, brand=Ford, model=F350, price=60000.0, color=red, owner=null, pendingList=[]]]
+2019-09-30 15:02:11 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=1, brand=Ford, model=F350, price=60000.0, color=red, owner=null, pendingList=[]]]
+2019-09-30 15:03:05 INFO  root:26 - Login: login as customer [customer]
+2019-09-30 15:03:12 INFO  root:26 - Make Offer(customer): successfully updated carPool HashMap [CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, color=gray, owner=null, pendingList=[UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[]]]]]
+2019-09-30 15:03:12 INFO  root:26 - Make Offer(customer): successfully write updated carPool to CarPool.dat
+2019-09-30 15:03:29 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 15:03:35 INFO  root:26 - Accept Offer: successfully accepted an offer for [customer], [CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, color=gray, owner=UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, color=gray, owner=null, pendingList=[]]]], pendingList=[UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, color=gray, owner=null, pendingList=[]]]]]]] is sold
+2019-09-30 15:03:35 INFO  root:26 - Accept Offer: successfully update CarPool and UserPool
+2019-09-30 15:03:49 INFO  root:26 - Login: login as customer [customer]
+2019-09-30 15:04:01 INFO  root:26 - Login: login as customer [customer]
+2019-09-30 15:07:51 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 15:12:15 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 15:12:32 ERROR root:14 - Login: fail to login due to userId no found
+2019-09-30 15:12:36 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 15:12:52 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=2, brand=Tesla, model=Model X, price=70000.0, color=silvver, owner=null, pendingList=[]]]
+2019-09-30 15:12:52 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=2, brand=Tesla, model=Model X, price=70000.0, color=silvver, owner=null, pendingList=[]]]
+2019-09-30 15:13:15 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 15:13:28 INFO  root:26 - Login: login as customer [customer]
+2019-09-30 15:13:45 INFO  root:26 - Make Offer(customer): successfully updated carPool HashMap [CarImpl [id=2, brand=Tesla, model=Model X, price=70000.0, color=silvver, owner=null, pendingList=[UserImpl, userId=customer, password=customer, fullName=customer customer, userType=0, carList=[CarImpl [id=0, brand=Toyota, model=Camry, price=20000.0, color=gray, owner=null, pendingList=[]]]]]]]
+2019-09-30 15:13:45 INFO  root:26 - Make Offer(customer): successfully write updated carPool to CarPool.dat
+2019-09-30 15:14:00 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 15:14:09 INFO  root:26 - Reject Offer: successfully updated pendinglist of car [CarImpl [id=2, brand=Tesla, model=Model X, price=70000.0, color=silvver, owner=null, pendingList=[]]]
+2019-09-30 15:14:09 INFO  root:26 - Reject Offer(employee): successfully write updated carPool to CarPool.dat
+2019-09-30 15:14:24 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=3, brand=, model=s, price=10000.0, color=red, owner=null, pendingList=[]]]
+2019-09-30 15:14:24 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=3, brand=, model=s, price=10000.0, color=red, owner=null, pendingList=[]]]
+2019-09-30 15:14:31 INFO  root:26 - Remove Car(employee): successfully selected car [CarImpl [id=3, brand=, model=s, price=10000.0, color=red, owner=null, pendingList=[]]]
+2019-09-30 15:14:31 INFO  root:26 - Remove Car(employee): successfully removed car from lot [CarImpl [id=3, brand=, model=s, price=10000.0, color=red, owner=null, pendingList=[]]]
+2019-09-30 15:17:09 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 15:19:30 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 15:24:31 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 15:24:40 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 15:26:35 INFO  root:26 - Login: login as employee [cardealer]
+2019-09-30 15:27:04 INFO  root:26 - Add Car: Successfully add newCar to carPool [CarImpl [id=3, brand=Ford, model=Focus, price=30000.0, color=blue, owner=null, pendingList=[]]]
+2019-09-30 15:27:04 INFO  root:26 - Add Car: Succussfully write carPool to CarPool.dat [CarImpl [id=3, brand=Ford, model=Focus, price=30000.0, color=blue, owner=null, pendingList=[]]]
