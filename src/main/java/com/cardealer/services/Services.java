@@ -18,6 +18,7 @@ import com.cardealer.pojos.UserImpl;
 import com.cardealer.util.MD5;
 import com.cardealer.pojos.BoughtCar;
 import com.cardealer.pojos.CarImpl;
+import com.cardealer.pojos.TransactionImpl;
 
 public class Services {
 	// login status, 0=>not log in, 1=>customer log in, 2=>employee log in
@@ -542,7 +543,8 @@ public class Services {
 	}
 	
 //	customer view the cars they own, receive UserImpl as parameter
-//	1. display List<BoughtCar> 
+//  1. receive customer as argument
+//	2. display cust.List<BoughtCar> 
 	public void displayCustCarList(UserImpl cust) {
 		List<BoughtCar> carList = cust.getCarList();
 		String header = String.format("%3s|%10s|%10s|%10s|%10s|%10s", "#", "Brand", "Model", "Color", "Price", "Paid Amt");
@@ -558,7 +560,41 @@ public class Services {
 			System.out.println("Bought List is empty, you don't own any car yet");
 		}
 	}
-	 
+	
+//	employee view all transactions
+//	1. open Transaction.dat
+//	2. retrieve all transactions and store into ArrayList<TransactionImpl>
+//	3. display ArrayList<TransactionImpl>
+	@SuppressWarnings("unchecked")
+	public void viewTransaction() {
+		String tranFile = "./database/TranPool.dat";
+		FileInputStream inFile = null;
+		ObjectInputStream reader = null;
+		HashMap<Integer, TransactionImpl> trans = null;
+		
+		
+		try {
+			// open car, user, transaction files and get HashMap for each
+			inFile = new FileInputStream(tranFile);
+			reader = new ObjectInputStream(inFile);
+			trans = (HashMap<Integer, TransactionImpl>) reader.readObject();
+			this.dispalyTransList(trans);			
+		} catch (FileNotFoundException e) {
+			error("View Trans(employee): fail to view transactions due to FileNotFound");
+		} catch (IOException e) {
+			error("View Trans(employee): fail to view transactions due to IO Error");
+		} catch (ClassNotFoundException e) {
+			error("View Trans(employee): fail to view transactions due to data casting error");
+		} finally {
+			try {
+				reader.close();
+				inFile.close();
+			} catch (IOException e) {
+				error("View Trans(employee): fail to close TranPool.dat after reading transactions");
+			}
+		}
+		
+	}
 	
 //	=========== private helper functions =========
 	
@@ -699,6 +735,22 @@ public class Services {
 		}
 	}
 	
+//	display transactions list, receive ArrayList<TransactionImpl> trans, dispaly in table format
+	private void dispalyTransList(Map<Integer, TransactionImpl> trans) {
+		String header = String.format("%3s|%15s|%15s|%10s|%10s", "#", "Car", "Customer", "Amount", "Date");
+		System.out.println(header);
+		TransactionImpl curTran = null;
+		if (trans != null) {
+			for (int i : trans.keySet()) {
+				curTran = trans.get(i);
+				System.out.print(String.format("%3s|", i+1));
+				System.out.println(String.format("%15s|%15s|%10s|%10s", curTran.getCarId(), curTran.getUserId(), curTran.getPaymentAmt(), curTran.getPayDate().toString()));
+			}
+		}
+		else {
+			System.out.println("No transaction to show at this time. Transaction List is empty.");
+		}
+	}
 
 	
 //	display title of car dealer
@@ -788,6 +840,7 @@ public class Services {
 						System.out.println("2. Remove a Car");
 						System.out.println("3. Accept an Offer");
 						System.out.println("4. Reject an Offer");
+						System.out.println("5. View Transactions");
 						System.out.println("0. Logout");
 						if (this.validEnter == 0) {
 							System.out.println("Invalid input, Choose again...");
@@ -839,6 +892,14 @@ public class Services {
 							else {
 								System.out.println("Fail to reject offer, please try again");
 							}
+						}
+						// view payment
+						else if (c == 5) {
+							validEnter = 1;
+							Services.lineSplitter();
+							Services.displayTitle();
+							this.viewTransaction();
+							
 						}
 						// log out
 						else if (c == 0) {

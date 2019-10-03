@@ -1,15 +1,17 @@
 package com.cardealer.driver;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-import com.cardealer.pojos.BoughtCar;
-import com.cardealer.pojos.CarImpl;
-import com.cardealer.pojos.UserImpl;
+import com.cardealer.pojos.*;
 import com.cardealer.services.Services;
 
 import static com.cardealer.util.LoggerUtil.*;
@@ -21,30 +23,34 @@ public class TestDrive {
 		Services serve = new Services();
 		serve.run();
 		
-//		// register 
-//		test.createUser();
-//	
-//		// login 
-	
-//		UserImpl loginUser = test.login(cin);
+		
+		
+		
+		
+		
+		
+//		FileInputStream inFile = null;
+//		ObjectInputStream reader = null;
+//		FileOutputStream outFile = null;
+//		ObjectOutputStream writer = null;
+//		HashMap<String, UserImpl> userPool = null;
+//		UserImpl curUser = null;
 //		
-//		// add car
-//		System.out.println(test.addCar(cin));
-//		
-//		// is loginUser is valid
-//		if (loginUser != null) {
-//			// get cars on lot
-//			ArrayList<CarImpl> carLot = test.getCarLot();
-//			
-//			// pick a car on carLot and make offer
-//			System.out.println(test.makeOffer(carLot, loginUser, cin));
-//			
-//			// rejcet an offer 
-//			System.out.println(test.rejectOffer(carLot, cin));
+//		try {
+//			inFile = new FileInputStream("./database/UserPool.dat");
+//			reader = new ObjectInputStream(inFile);
+//			userPool = (HashMap<String, UserImpl>) reader.readObject();
+//			curUser = userPool.get("customer");
+//			curUser.getCarList().get(0).setPaidAmt(10000);
+//			userPool.put("customer", curUser);
+//			outFile = new FileOutputStream("./database/UserPool.dat");
+//			writer = new ObjectOutputStream(outFile);
+//			writer.writeObject(userPool);
+//			System.out.print("Done");
+//		}catch (Exception e) {
+//			e.printStackTrace();
 //		}
-//		
-//		
-//		cin.close();
+
 		
 // For creating the first user in UserPool
 //		UserImpl u = new UserImpl("cardealer", "cardealer", "ricky wang", 1, new ArrayList<BoughtCar>());
@@ -90,6 +96,27 @@ public class TestDrive {
 //			}
 //		}
  
+// creating first transaction in Transactio.dat
+//		TransactionImpl tran1 = new TransactionImpl(1, "Toyota Camry", "customer customer", 5000, new Date(119, 10, 1));
+//		TransactionImpl tran2 = new TransactionImpl(2, "Toyota Camry", "customer customer", 5000, new Date(119,10,2));
+//		HashMap<Integer, TransactionImpl> tranPool = new HashMap<Integer, TransactionImpl>();
+//		tranPool.put(1, tran1);
+//		tranPool.put(2, tran2);
+//		FileOutputStream outFile = null;
+//		ObjectOutputStream writer = null;
+//		
+//		try {
+//			outFile = new FileOutputStream("./database/TranPool.dat");
+//			writer = new ObjectOutputStream(outFile);
+//			writer.writeObject(tranPool);
+//			System.out.println("Done");
+//		} catch (FileNotFoundException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		
 	}
 }

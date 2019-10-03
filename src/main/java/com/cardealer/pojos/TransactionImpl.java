@@ -1,15 +1,16 @@
 package com.cardealer.pojos;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class TransactionImpl {
+public class TransactionImpl implements Serializable {
 	private int id;
-	private int carId;
-	private int userId;
+	private String carId;
+	private String userId;
 	private double paymentAmt;
 	private Date payDate;
 	
-	public TransactionImpl(int id, int carId, int userId, double paymentAmt, Date payDate) {
+	public TransactionImpl(int id, String carId, String userId, double paymentAmt, Date payDate) {
 		super();
 		this.id = id;
 		this.carId = carId;
@@ -23,16 +24,16 @@ public class TransactionImpl {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getCarId() {
+	public String getCarId() {
 		return carId;
 	}
-	public void setCarId(int carId) {
+	public void setCarId(String carId) {
 		this.carId = carId;
 	}
-	public int getUserId() {
+	public String getUserId() {
 		return userId;
 	}
-	public void setUserId(int userId) {
+	public void setUserId(String userId) {
 		this.userId = userId;
 	}
 	public double getPaymentAmt() {
@@ -53,5 +54,8 @@ public class TransactionImpl {
 				+ ", payDate=" + payDate + "]";
 	}
 	
+	public String display() {
+		return null;
+	}
 	
 }
